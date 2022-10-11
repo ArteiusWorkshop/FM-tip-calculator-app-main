@@ -1,0 +1,212 @@
+:root {
+  --Strongcyan: hsl(172, 67%, 45%);
+  --Verydarkcyan: hsl(183, 100%, 15%);
+  --Darkgrayishcyan: hsl(186, 14%, 43%);
+  --Grayishcyan: hsl(184, 14%, 56%);
+  --Lightgrayishcyan: hsl(185, 41%, 84%);
+  --Verylightgrayishcyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+@media only screen and (max-width: 425px) {
+  .box {
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .result {
+    height: 257px;
+  }
+
+  .tip .MuiButton-root {
+    max-width: 147px;
+  }
+}
+
+@media only screen and (min-width: 426px) {
+  .box {
+    border-radius: 20px 20px 20px 20px;
+    width: 920px;
+    height: 481px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mlbox {
+    grid-column-start: 1;
+  }
+
+  .mrbox {
+    grid-column-start: 2;
+    align-items: center;
+  }
+
+  .result {
+    height: 417px;
+  }
+
+  .tip .MuiButton-root {
+    max-width: 117px;
+  }
+}
+
+*,
+.MuiInput-root,
+.MuiTypography-root {
+  font-family: "Space Mono", monospace;
+}
+
+body {
+  background-color: var(--Lightgrayishcyan);
+}
+
+.MuiInput-root {
+  background-color: var(--Verylightgrayishcyan);
+  height: 48px;
+  color: var(--Verydarkcyan);
+  font-weight: 700;
+  font-size: 22px;
+  border-radius: 5px;
+}
+
+.box {
+  background-color: var(--White);
+}
+
+.header {
+  height: 144px;
+  text-transform: uppercase;
+  color: var(--Darkgrayishcyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 10px;
+}
+
+.bill,
+.people,
+.tip {
+  width: 85%;
+  text-align: start;
+}
+
+.bill,
+.people {
+  margin-top: 25px;
+  height: 74px;
+}
+
+.tip {
+  margin-top: 15px;
+}
+
+.form-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--Darkgrayishcyan);
+}
+
+.tip .MuiFormControl-root {
+  height: 48px;
+  max-width: 147px;
+}
+
+.result .MuiButton-root,
+.tip .MuiButton-root {
+  color: var(--White);
+  font-size: 22px;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+  height: 48px;
+  background-color: var(--Verydarkcyan);
+}
+
+.tip .MuiButton-root:hover {
+  color: var(--Verydarkcyan);
+  background-color: var(--Lightgrayishcyan);
+}
+
+.result,
+.result-tip-amount {
+  display: flex;
+  align-items: center;
+}
+
+.result {
+  width: 90%;
+  padding-top: 15px;
+  background-color: var(--Verydarkcyan);
+  border-radius: 15px;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.result .MuiButton-root {
+  color: var(--Verydarkcyan);
+  font-size: 18px;
+  background-color: var(--Strongcyan);
+  width: 85%;
+}
+.result .MuiButton-root:hover {
+  background-color: var(--Lightgrayishcyan);
+}
+.result .MuiButton-root:disabled {
+  background-color: var(--Grayishcyan);
+  color: var(--Darkgrayishcyan);
+}
+
+.result-tip-amount {
+  justify-content: space-between;
+  height: 48px;
+  width: 85%;
+}
+
+.ta,
+.ts {
+  font-size: 15px;
+  color: var(--White);
+  font-weight: 600;
+}
+
+.ts {
+  font-size: 14px;
+  color: var(--Grayishcyan);
+}
+
+.tr {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--Strongcyan);
+}
+
+.mlbox,
+.mrbox {
+  display: flex;
+  justify-content: center;
+}
+
+.mrbox {
+  width: 100%;
+}
+
+.mlbox {
+  flex-direction: column;
+  align-items: center;
+}
+
+.five .MuiButton-root,
+.fifteen .MuiButton-root,
+.ten .MuiButton-root,
+.twentyfive .MuiButton-root,
+.fifty .MuiButton-root {
+  background-color: var(--Strongcyan);
+}
